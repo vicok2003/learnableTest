@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -20,7 +22,8 @@ ul {
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   padding: 10px 20px;
-  background-color: inherit;
+  background-color: #fbbb47;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .navbar .logo img {
   width: 30%;
@@ -56,6 +59,7 @@ ul {
   display: none;
   position: absolute;
   right: 0;
+  top: 40px;
   background-color: #fff;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   padding: 10px;
@@ -72,17 +76,44 @@ ul {
   display: block;
 }
 
-.dropdown-content a {
+.dropdown-content ul li a {
   text-decoration: none;
   font-family: Georgia, "Times New Roman", Times, serif;
-  border: 1px solid #fff;
   border-radius: 8px;
+  color: #01091a;
   padding: 2px;
 }
 
-.categories-container {
+.review-section {
   padding: 50px 20px;
-  border: 1px solid red;
+}
+.review-section h1 {
+}
+#opening-review {
+  grid-area: opening-rv;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#review-image {
+  grid-area: review-img;
+  width: 100%;
+}
+#closing-review {
+  grid-area: closing-rv;
+  padding: 20px 0;
+}
+.review-section article {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "opening-rv review-img" "closing-rv closing-rv";
+}
+
+.grid-container {
+  padding: 50px 20px;
+}
+.grid-container h2 {
+  padding: 20px 0;
 }
 .grid {
   display: grid;
@@ -108,17 +139,37 @@ ul {
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 } */
 
-.footer-grid {
+.footer-container {
   display: grid;
+  align-items: center;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
-  background-color: #000;
+  background-color: #fbbb47;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   color: #fff;
   padding: 20px;
   margin: 0;
   font-weight: bold;
 }
+.footer-container img {
+  width: 30%;
+  height: 30%;
+}
+.privacy-links ul {
+  display: flex;
+  justify-content: center;
+}
+.privacy-links ul li {
+  margin-right: 10px;
+  text-decoration: underline;
+}
 
-.grid-footer-2 {
-  justify-content: flex-end;
+.social-links ul {
+  display: flex;
+  justify-content: center;
+}
+.social-links ul li img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
 }

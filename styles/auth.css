@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.auth-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.auth-container .logo {
+  padding: 30px 0;
+}
+.auth-container .logo img {
+  width: 100%;
+}
+.form-container {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.form-container h2 {
+  padding: 10px 0;
+}
+.form-container div {
+  display: grid;
+  grid-template-columns: 100%;
+}
+.form-container div label {
+  padding: 10px 0;
+}
+
+.form-container input {
+  border-radius: 10px;
+  border: 2px solid #f1f1f1;
+  padding: 12px;
+}
+.form-container .forgot-password {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 0;
+}
+.form-container .forgot-password a {
+  color: #000;
+}
+.form-container button {
+  background-color: #01091a;
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 10px;
+  color: #ffffff;
+  width: 100%;
+}
+.form-container p {
+  text-align: center;
+}
